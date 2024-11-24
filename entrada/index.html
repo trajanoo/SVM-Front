@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="side-bar">
+
+        <div class="logo">
+            <img src="../images/logotipo.png" alt="Logotipo">
+        </div>
+        <div class="nav-container">
+        <nav>
+            <ul>
+                <li>
+                    <a id="entrada" href="#"><img class="arrow" src="../images/icone.png" id="entrada" alt=""> Entrada</a>
+                </li>
+                <li>
+                    <a href="../historico/historico.html"><img class="arrow" src="../images/icone.png" alt=""> Histórico</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+    <main>
+        <h1>Entrada</h1>
+
+        <div class="search-container">
+            <div class="input-container">
+            <input type="text" placeholder="Pesquisar">
+            <img src="../images/search.png" alt="">
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th class="primeiro">Dia</th>
+                  <th>Horário</th>
+                  <th>Sala</th>
+                  <th>Nome da Equipe</th>
+                  <th>Tipo de Cirurgia</th>
+                  <th>Dados do Paciente</th>
+                  <th class="ultimo">Material</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>16/11</td>
+                  <td class="segundo">08:00</td>
+                  <td>206</td>
+                  <td class="openable" onclick="openPopup('popup2')">Ver equipe</td>
+                  <td class="quinto">Remoção de Apêndice</td>
+                  <td class="openable" onclick="openPopup('popup3')">Ver dados do paciente</td>
+                  <td class="openable" onclick="openPopup('popup4')">Ver materiais</td>
+                </tr>
+                <tr>
+                    <td>17/11</td>
+                    <td class="segundo">10:30</td>
+                    <td>204</td>
+                    <td class="openable" onclick="openPopup('popup2')">Ver equipe</td>
+                    <td class="quinto">Histerectomia</td>
+                    <td class="openable" onclick="openPopup('popup3')">Ver dados do paciente</td>
+                    <td class="openable" onclick="openPopup('popup4')">Ver materiais</td>
+                  </tr>
+                  <tr>
+                    <td>18/11</td>
+                    <td class="segundo">12:45</td>
+                    <td>202</td>
+                    <td class="openable" onclick="openPopup('popup2')">Ver equipe</td>
+                    <td class="quinto">Bypass Gástrico</td>
+                    <td class="openable" onclick="openPopup('popup3')">Ver dados do paciente</td>
+                    <td class="openable" onclick="openPopup('popup4')">Ver materiais</td>
+                  </tr>
+                  <tr>
+                    <td>19/11</td>
+                    <td class="segundo">14:00</td>
+                    <td>203</td>
+                    <td class="openable" onclick="openPopup('popup2')">Ver equipe</td>
+                    <td class="quinto">Cesariana</td>
+                    <td class="openable" onclick="openPopup('popup3')">Ver dados do paciente</td>
+                    <td class="openable" onclick="openPopup('popup4')">Ver materiais</td>
+                  </tr>      
+                  <tr>
+                    <td>20/11</td>
+                    <td class="segundo">16:15</td>
+                    <td>201</td>
+                    <td class="openable" onclick="openPopup('popup2')">Ver equipe</td>
+                    <td class="quinto">Cirurgia Cardíaca</td>
+                    <td class="openable" onclick="openPopup('popup3')">Ver dados do paciente</td>
+                    <td class="openable" onclick="openPopup('popup4')">Ver materiais</td>
+                  </tr>      
+                  <tr>
+                    <td>21/11</td>
+                    <td class="segundo">18:30</td>
+                    <td>221</td>
+                    <td class="openable" onclick="openPopup('popup2')">Ver equipe</td>
+                    <td class="quinto">Plástica Reconstrutiva</td>
+                    <td class="openable" onclick="openPopup('popup3')">Ver dados do paciente</td>
+                    <td class="openable" onclick="openPopup('popup4')">Ver materiais</td>
+                  </tr> 
+                  <tr>
+                    <td>22/11</td>
+                    <td class="segundo">08:30</td>
+                    <td>221</td>
+                    <td class="openable" onclick="openPopup('popup2')">Ver equipe</td>
+                    <td class="quinto">Laparotomia</td>
+                    <td class="openable" onclick="openPopup('popup3')">Ver dados do paciente</td>
+                    <td class="openable" onclick="openPopup('popup4')">Ver materiais</td>
+                  </tr>
+                  <tr>
+                    <td>23/11</td>
+                    <td class="segundo">10:00</td>
+                    <td>221</td>
+                    <td class="openable" onclick="openPopup('popup2')">Ver equipe</td>
+                    <td class="quinto">Vasectomia</td>
+                    <td class="openable" onclick="openPopup('popup3')">Ver dados do paciente</td>
+                    <td class="openable" onclick="openPopup('popup4')">Ver materiais</td>
+                  </tr>               
+              </tbody>
+            </table>
+          </div>
+          <div class="submit-container">
+          <input id="submit" type="submit" onclick="openPopup('popup1')">
+          </div>
+
+          <!-- POPUP (ENVIAR)-->
+          <div class="popup" id="popup1">
+            <img src="../images/yes.png" alt="">
+            <h2>Enviado!</h2>
+            <p>As informações foram enviadas à máquina.</p>
+            <button type="button" onclick="closePopup('popup1')">OK</button>
+        </div>
+        
+        <!-- Popup para Ver Equipe -->
+        <div class="popup" id="popup2">
+          <img src="../images/medicine.png" alt=""/>
+          <h2>Equipe Médica</h2>
+          <p>
+              <strong>Cirurgião:</strong> Dr. Paulo Santos<br>
+              <strong>Anestesista:</strong> Dra. Claudia Almeida<br>
+              <strong>Circulante:</strong> Paula Silva<br>
+              <strong>Auxiliar de Cirurgião:</strong> Fernanda Costa<br>
+              <strong>Instrumentador:</strong> Aline Souza
+          </p>
+          <button type="button" onclick="closePopup('popup2')">OK</button>
+      </div>
+      
+      <!-- Popup para Ver Dados do Paciente -->
+      <div class="popup" id="popup3">
+          <img src="../images/medicine.png" alt=""/>
+          <h2>Dados do Paciente</h2>
+          <p>
+              <strong>Nome:</strong> João da Silva<br>
+              <strong>Data de Nascimento/Idade:</strong> 15/05/1978 (45 anos)<br>
+              <strong>Nome da Mãe:</strong> Maria Aparecida da Silva<br>
+              <strong>Tipo de Cirurgia:</strong> Hérnia Inguinal
+          </p>
+          <button type="button" onclick="closePopup('popup3')">OK</button>
+      </div>
+
+<!-- Popup para Ver Materiais -->
+<div class="popup" id="popup4">
+  <img src="../images/medicine.png" alt=""/>
+  <h2>Materiais</h2>
+  <p>Lista de materiais:<br>- Pinça cirúrgica<br>- Agulha<br>- Fio de sutura</p>
+  <button type="button" onclick="closePopup('popup4')">OK</button>
+</div>
+    </main>
+
+</body>
+<script src="script.js"></script>
+</html>

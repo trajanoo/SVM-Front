@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3d6451;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    color: #fff;
+    margin-bottom: 10vh;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    padding: 20px 50px 40px 20px;
+    margin: 0 auto;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/unimed.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    filter: blur(5px);
+    z-index: -1;
+    scale: 1;
+}
+
+.instrument-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.instrument-table th {
+    text-align: left;
+    padding: 10px 0;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.instrument-table td {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+.maisMenos {
+    display: inline-flex;
+    gap: 15px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#enviar {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 7px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    background-color:#18d47c;
+    color: #fff;
+}
+
+label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #44aa44;
+}
+
+input[type="checkbox"] + label {
+    background-color: #777777;
+}
+
+table {
+    margin-bottom: 4rem;
+}
+
+.content{
+    display: inline-flex;
+    gap: 20px;
+}
+
+.informacoes {
+    background-color: #a19e9ea8;
+    width: 40vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.informacoes img{
+    height: 10vh;
+}
