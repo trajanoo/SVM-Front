@@ -110,21 +110,16 @@ color: #00A65A;}
 
 .nav-container nav ul li a img.arrow {
     margin-right: 10px; /* Espaçamento entre o ícone e o texto */
-    width: 10px; /* Ajuste o tamanho do ícone */
+    width: 20px; /* Ajuste o tamanho do ícone */
 
     height: auto;
 }
 
 .arrow {
-    opacity: 0;
     filter: brightness(0) saturate(100%) invert(34%) sepia(93%) saturate(510%) hue-rotate(84deg) brightness(91%) contrast(87%);
     transition: 0.3s;
     height: 0.5rem;
     width: 0.5rem;
-}
-
-a:hover .arrow {
-    opacity: 1;
 }
 
 .nav-container nav ul li a {
